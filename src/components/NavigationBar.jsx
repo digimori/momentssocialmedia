@@ -13,14 +13,14 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="ms-auto my-2 my-lg-0 text-left"
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link>Home</Nav.Link>
-            <Nav.Link>Sign In</Nav.Link>
-            <Nav.Link>Sign Up</Nav.Link>
-            
+            <Nav.Link><i className="fas fa-home"></i>Home</Nav.Link>
+            <Nav.Link><i className='fas fa-sign-in-alt'></i>Sign In</Nav.Link>
+            <Nav.Link><i className='fas fa-user-plus'></i>Sign Up</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
