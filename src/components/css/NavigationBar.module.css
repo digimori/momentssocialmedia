@@ -1,0 +1,9 @@
+.Navigation {
+    background-color: #212529;
+    border-bottom: 1px solid #eee;
+
+}
+
+.Navigation a {
+    color: #eee;
+}

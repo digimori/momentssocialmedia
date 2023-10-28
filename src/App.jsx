@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import css from './components/css/App.module.css'
 import NavigationBar from './components/NavigationBar'
 
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
 
-      <div>
+      <div className={css.App}>
         <NavigationBar />
         </div>
   )

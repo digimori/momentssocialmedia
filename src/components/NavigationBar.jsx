@@ -3,11 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/logoipsum-293.svg';
+import css from '../components/css/NavigationBar.module.css';
 
 const NavigationBar = () => {
   return (
     <div>
-         <Navbar expand="md" className="bg-body-tertiary" data-bs-theme="dark" fixed="top">
+         <Navbar expand="md" className={css.Navigation} fixed="top">
       <Container fluid>
         <Navbar.Brand><img src={logo} alt="logo" height="45" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

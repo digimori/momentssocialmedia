@@ -1,5 +1,8 @@
 # Moments Social Media App
 
+## Live Preview (Current in progress project):
+[Hosted on Netlify](https://momentssocial.netlify.app/)
+
 ## User Stories:
 ### Navigation & Authentication
 - Navigation: As a user I can view a navbar from every page so that I can navigate easily between pages
