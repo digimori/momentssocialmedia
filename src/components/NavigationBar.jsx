@@ -4,13 +4,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/logoipsum-293.svg';
 import css from '../components/css/NavigationBar.module.css';
+import { NavLink } from 'react-router-dom';
 
 const NavigationBar = () => {
   return (
     <div>
          <Navbar expand="md" className={css.Navigation} fixed="top">
       <Container fluid>
+        <NavLink>
         <Navbar.Brand><img src={logo} alt="logo" height="45" /></Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,9 +21,9 @@ const NavigationBar = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link><i className="fas fa-home"></i>Home</Nav.Link>
-            <Nav.Link><i className='fas fa-sign-in-alt'></i>Sign In</Nav.Link>
-            <Nav.Link><i className='fas fa-user-plus'></i>Sign Up</Nav.Link>
+            <NavLink to="/" className={css.NavLink}><i className="fas fa-home"></i>Home</NavLink>
+            <NavLink to="/signin" className={css.NavLink}><i className='fas fa-sign-in-alt'></i>Sign In</NavLink>
+            <NavLink to="/signup" className={css.NavLink}><i className='fas fa-user-plus'></i>Sign Up</NavLink>
 
           </Nav>
         </Navbar.Collapse>
